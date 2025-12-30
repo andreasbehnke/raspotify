@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.48.1] - 2025-11-24
+
+### Fixed
+* Disabling volume controls with `LIBRESPOT_VOLUME_CTRL=fixed` should now be
+  possible again. This feature was broken since at least version 0.47.0. (#754)
+* Manual dependency installation was removed from the installer. (#752)
+
+## [0.48.0] - 2025-11-12
+
+### Changed
+* Updated to Librespot 0.8.0. This release fixes a few Spotify connect issues.
+* Local file playback is now supported. Use the newly added config variable
+  `LIBRESPOT_LOCAL_FILE_DIR` to define the path to your locally stored music.
+  Note that local files must be sampled at 44.1 kHz, and that to play them, the
+  files must be added to a Spotify playlist.
+
 ## [0.47.1] - 2025-11-07
 
 ### Fixed
